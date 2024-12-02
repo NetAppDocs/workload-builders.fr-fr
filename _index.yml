@@ -1,0 +1,28 @@
+---
+indexpage:
+  title: Documentation relative à la charge de travail BlueXP  pour les constructeurs
+  lead: Créez et gérez des projets de développement logiciel en plus du stockage du
+    système de fichiers FSX pour ONTAP dans l'usine de workloads BlueXP .
+  tiles:
+  - title: Commencez
+    links:
+    - title: Notes de mise à jour
+      url: "/whats-new.html"
+    - title: En savoir plus sur Builders
+      url: "/learn-builders.html"
+    - title: Démarrage rapide
+      url: "/quick-start-builders.html"
+  - title: Utilisez Builders
+    links:
+    - title: Gérer des projets
+      url: "/manage-projects.html"
+    - title: Créez un espace de travail
+      url: "/create-workspaces.html"
+    - title: Automatisez avec Codebox
+      url: "/automate-codebox.html"
+  - title: Connaissances et support
+    links:
+    - title: S'inscrire pour obtenir de l'aide
+      url: "/support-registration.html"
+    - title: Obtenez de l'aide
+      url: "/get-help-builders.html"

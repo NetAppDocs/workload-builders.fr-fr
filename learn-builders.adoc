@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: learn-builders.html 
+keywords: software builders, development, benefits 
+summary: 'L"usine de workloads BlueXP  pour Builders est un outil de création d"environnement de développement rapide destiné aux développeurs de logiciels.' 
+---
+= En savoir plus sur la fabrique de charges de travail BlueXP  pour les constructeurs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+L'usine de workloads BlueXP  pour Builders est un outil de création d'environnement de développement rapide destiné aux développeurs de logiciels. Il permet de configurer rapidement des environnements de développement personnel, de gagner du temps et d'activer le libre-service pour les développeurs, tout en permettant aux équipes DevOps de garder le contrôle de l'infrastructure. Grâce à Builders, les développeurs de logiciels peuvent rapidement créer des espaces de travail sans avoir besoin de stockage de données spécialisé ni de comprendre l'infrastructure de développement.
+
+
+
+== Qu'est-ce que l'usine de charges de travail BlueXP  pour les constructeurs ?
+
+BlueXP  Workload Factory for Builders est conçu pour rationaliser la façon dont les développeurs gèrent et interagissent avec différentes versions de leurs logiciels. Les développeurs s'intègrent en toute transparence à Perforce Helix Core pour fournir des clones instantanés des versions logicielles, créant ainsi des espaces de travail prêts à l'emploi pour le développement, le QA et les processus ci/CD.
+
+Avec Builders, vous pouvez facilement créer un projet et attribuer un volume qui représente votre environnement logiciel et ses artéfacts. Lorsque vous mettez à jour votre logiciel, vous pouvez prendre des instantanés du volume, en capturant l'état de votre logiciel à ce moment-là. Cela signifie que vous pouvez accéder instantanément à n'importe quelle version de votre logiciel sans avoir à resynchroniser avec le système de contrôle des versions, ce qui vous permet de gagner un temps précieux et d'économiser des ressources.
+
+En exploitant les fonctionnalités de snapshot et de clonage de ONTAP, Builders améliore votre workflow de développement. Il permet d'accéder rapidement à plusieurs versions de vos logiciels, d'accélérer les cycles de développement et de réduire les délais de mise sur le marché.
+
+Pour plus d'informations sur l'usine de charge de travail, reportez-vous au link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["présentation de l'usine des charges de travail"^].
+
+
+
+== Usine de charge de travail BlueXP  pour les fonctions de constructeur
+
+L'usine de charge de travail BlueXP  pour les constructeurs offre les fonctionnalités suivantes :
+
+* Créer, modifier et supprimer des projets
+* Créer des instantanés des versions logicielles définies
+* Création et suppression d'espaces de travail (basés sur des clones)
+* Créez des stratégies d'accès pour contrôler l'accès à un projet
+* Analysez l'utilisation de la capacité de chaque projet
+* Contrôlez les limites de taille de clone et la conservation des clones pour chaque projet
+* Intégration avec des systèmes de contrôle des versions tels que Perforce
+
+
+
+
+== Projets et espaces de travail dans Builders
+
+Lorsque vous utilisez Builders, vous créez un projet et attribuez un volume qui représente votre environnement logiciel et ses artefacts. Chaque fois que vous créez une nouvelle version du logiciel, vous devez resynchroniser les données de volume et créer un snapshot de projet pour marquer l'état du volume comme une version connue. Le volume source du projet peut recevoir des mises à jour en continu et avoir plusieurs snapshots pour marquer plusieurs versions. Vous pouvez utiliser chaque instantané immédiatement en tant que clone instantané, référentiel modifiable dédié ou partagé disponible pour les développeurs, les processus d'assurance qualité ou de création. Un clone dans le contexte d'une version logicielle spécifique est un espace de travail.
+
+
+
+== Modes de fonctionnement en usine de la charge de travail
+
+Trois modes opérationnels différents - _Basic_, _read_ et _automate_ - offrent des options flexibles pour le déploiement à l'intérieur et à l'extérieur de l'usine de charge de travail. Obtenez une valeur immédiate à zéro confiance en _Basic_ mode avec des extraits de code pour une utilisation en dehors de l'usine de la charge de travail. Bénéficiez d'une valeur incrémentielle avec une confiance incrémentale en modes _read_ et _automate_.
+
+En savoir plus sur link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modes de fonctionnement en usine de la charge de travail"^].
+
+
+
+== Automatisation avec la codeplug d'usine de la charge de travail
+
+L'usine de charge de travail intègre l'automatisation avec la _Codebox_. La Codebox offre les avantages d'automatisation suivants :
+
+* *Génération de code snippet* : des snippets IAC (Infrastructure-as-Code) sont générés lors de la création de ressources, permettant une intégration transparente avec les workflows d'orchestration existants.
+* *Co-pilote Infrastructure-as-code*: Le Codebox est un co-pilote IAC (Infrastructure-as-code) qui aide les développeurs et le DevOps à générer du code pour exécuter toute opération prise en charge par une fabrique de charges de travail.
+* *Afficheur de code et catalogue d'automatisation*: La Codebox fournit un afficheur de code pour une analyse rapide de l'automatisation et un catalogue d'automatisation pour une réutilisation rapide future.
+
+
+
+
+== Le coût
+
+L'utilisation de la fonction Builders de l'usine de charge de travail est sans frais.
+
+
+
+== Licences
+
+Aucune licence spéciale n'est requise de la part de NetApp pour utiliser les fonctionnalités Builders de la fabrique de charges de travail.
+
+
+
+=== Régions prises en charge
+
+Les constructeurs sont pris en charge dans toutes les régions commerciales où FSX pour ONTAP est pris en charge. https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["Affichez les régions Amazon prises en charge."^]
+
+Les régions AWS suivantes ne sont pas prises en charge :
+
+* Régions de Chine
+* GovCloud (USA)
+* Le cloud secret
+* Meilleur cloud secret
+
+
+
+
+== Obtenir de l'aide
+
+Amazon FSX pour NetApp ONTAP est une solution propriétaire AWS. Pour toute question ou tout problème de support technique associé à votre système de fichiers FSX for ONTAP, à votre infrastructure ou à toute solution utilisant ce service, utilisez le centre de support de votre console de gestion AWS pour ouvrir un dossier de support avec AWS. Sélectionnez le service “FSX pour ONTAP” et la catégorie appropriée. Fournissez les informations restantes nécessaires pour créer un dossier de demande de support AWS.
+
+Pour des questions d'ordre général sur les applications et services d'usine de charge de travail ou d'usine, reportez-vous à link:get-help-builders.html["Obtenez de l'aide pour Builders pour l'usine de charge de travail"].

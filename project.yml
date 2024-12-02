@@ -1,0 +1,54 @@
+---
+settings:
+  name: Builders workloads
+  platform: cloud
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  release_notes_autogen:
+    release_notes_repo: workload-relnotes
+  langs: fr-fr,us-en,de-de,es-es,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
+sidebar:
+  entries:
+  - title: Documents destinés aux créateurs de workloads
+    url: "/index.html"
+  - title: Notes de mise à jour
+    entries:
+    - title: Quoi de neuf
+      url: "/whats-new.html"
+    - title: Limites connues
+      url: "/known-limitations.html"
+  - title: Commencez
+    entries:
+    - title: En savoir plus sur la fabrique de charges de travail BlueXP  pour les
+        constructeurs
+      url: "/learn-builders.html"
+    - title: Démarrage rapide
+      url: "/quick-start-builders.html"
+    - title: De formation
+      url: "/requirements-builders.html"
+    - title: Intégrez des constructeurs à Perforce
+      url: "/integrate-perforce.html"
+  - title: Utilisez les charges de travail Builders
+    entries:
+    - title: Gérer des projets
+      url: "/manage-projects.html"
+    - title: Créez un espace de travail
+      url: "/create-workspaces.html"
+    - title: Automatisez avec Codebox
+      url: "/automate-codebox.html"
+  - title: Connaissances et support
+    entries:
+    - title: S'inscrire pour obtenir de l'aide
+      url: "/support-registration.html"
+    - title: Obtenez de l'aide
+      url: "/get-help-builders.html"
+  - title: Mentions légales
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP workload factory for AWS
+  repo: workload-family

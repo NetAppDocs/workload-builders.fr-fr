@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="4cd460e2c71c2ffba346f4471ea0fa00" category="doc">Création de la version initiale de la charge de travail</block>
+  <block id="01885fa7b72aa9d947d8efa49fb4b8cd" category="paragraph">L'usine de charges de travail BlueXP  pour Builders simplifie la consommation et l'accès aux versions logicielles, éliminant ainsi le besoin d'outils ou de scripts personnalisés. Il vous permet de consommer des versions logicielles sous forme de clones instantanés intégrés à Perforce Helix Core comme espace de travail pratique pour vos processus de développement, ce qui vous fait gagner du temps et des ressources.</block>
+  <block id="5f9f7bdd8b86c6cc583afabbd903007c" category="paragraph">La version initiale permet de gérer des projets et des espaces de travail, et d'automatiser les actions avec Codebox. Vous pouvez également intégrer Builders à Perforce Helix Core, afin de gérer différentes versions de chaque projet et de passer rapidement de l'une à l'autre.</block>
+  <block id="08c1bf6e31ef174ff608b5eb3d282063" category="summary">Vous pouvez automatiser le déploiement de l'hôte, la création de bases de données, etc. Avec Codebox.</block>
+  <block id="2ea6aca63123969c1931cd33bf4619a0" category="doc">Automatisez avec Codebox</block>
+  <block id="8f21210d3f74acd90334ba76bc90791c" category="paragraph">Vous pouvez automatiser la création de projets et les opérations de protection des données avec Codebox. Codebox est un co-pilote IAC (Infrastructure-as-Code) qui vous aide à générer du code pour exécuter toutes les opérations prises en charge par l'usine de workloads.</block>
+  <block id="bd282943a337f4287ca0d70f9a836261" category="inline-link-macro">Automatisation de la Codebox</block>
+  <block id="7954c9f6b266222ad558a397a97a8531" category="paragraph">En savoir plus sur <block ref="d6a91743d83ea88006a3d66c27289981" category="inline-link-macro-rx"></block> et comment l'utiliser.</block>
+  <block id="d320e674d0ba312d297842a73dcb793d" category="summary">Un espace de travail dans une usine de charges de travail BlueXP  pour les constructeurs est une représentation perforce d'un projet basée sur un instantané de projet. Vous pouvez créer des espaces de travail dans le cadre d'un projet Builders.</block>
+  <block id="5638176be5dd4e400efc77338868cf55" category="doc">Créez un espace de travail</block>
+  <block id="bed4b07913cf7b77e0bbaa749c305b16" category="paragraph">Un espace de travail dans une usine de charge de travail BlueXP  pour les constructeurs est une représentation perforce d'un projet à un moment donné dans le temps. Les espaces de travail sont créés à l'aide d'un instantané de projet. Vous pouvez créer de nouveaux espaces de travail dans un projet Builders. Vous pouvez créer des espaces de travail à partir de l'interface utilisateur Perforce.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Avant de commencer</block>
+  <block id="99deb87866ad46d767c9f099cdd1bc32" category="inline-link-macro">Intégrez des constructeurs à Perforce</block>
+  <block id="6ada1658939e3e0c0066d917e1966e5b" category="paragraph">Assurez-vous d'avoir intégré Builders au client visuel Perforce Helix. Voir <block ref="1d27073a25bfd58e633b69f8b5d54945" category="inline-link-macro-rx"></block> pour plus d'informations.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Étapes</block>
+  <block id="da8298c164d94d09143ffe89648c5d3c" category="list-text">Connectez-vous à Perforce.</block>
+  <block id="0d8bfed2e411f7c8b7dff958995d4b8d" category="list-text">Dans le menu Perforce, sélectionnez *View* &gt; *WF*.</block>
+  <block id="cef1af30f6b4f7b7b4fb4dfaebdfd4ed" category="paragraph">L'écran de connexion à l'usine de la charge de travail s'affiche dans l'interface utilisateur Perforce.</block>
+  <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">expériences de la console</block>
+  <block id="eb788a90862825cc147ed3f85612a8cc" category="list-text">Connectez-vous à l'usine de la charge de travail à l'aide de l'un des <block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>.</block>
+  <block id="e779f93b54eb654988c0421af9a49154" category="list-text">Sélectionnez *Créer un espace de travail*.</block>
+  <block id="7e8ef7f44044b6d0f74789559287feea" category="list-text">Sur la page Créer un projet d'espace de travail, fournissez les informations suivantes :</block>
+  <block id="84e0437fbb34f7df37fde5cd3164b871" category="list-text">Sélectionnez un instantané à utiliser comme base pour l'espace de travail.</block>
+  <block id="823e06a14b6847643d4e237d4323c8c4" category="list-text">Entrez un nom pour l'espace de travail.</block>
+  <block id="23746643d2ed59cbb329d766d3165e53" category="list-text">Vous pouvez également saisir un identifiant utilisateur pour demander l'espace de travail. Cet identifiant doit correspondre à l'ID utilisateur Perforce du développeur qui utilisera cet espace de travail.</block>
+  <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">Sélectionnez *Créer*.</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
+  <block id="2d8f6486127f82c2bea30c11d743290d" category="paragraph">L'espace de travail est créé et apparaît dans la liste des espaces de travail de la page espaces de travail.</block>
+  <block id="42342e81c625fd1c1141771fe2b6b202" category="summary">NetApp prend en charge l'usine de workloads et ses services cloud de différentes manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Obtenez de l'aide</block>
+  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="paragraph">NetApp prend en charge Workload Factory et ses services cloud de différentes manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.</block>
+  <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">Bénéficiez du support de FSX pour ONTAP</block>
+  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">Pour obtenir un support technique concernant FSX for ONTAP, son infrastructure ou toute solution utilisant le service, reportez-vous à la section « obtention d'aide » de la documentation Workload Factory de ce produit.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX pour ONTAP</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">Pour bénéficier du support technique spécifique à Workload Factory et à ses solutions et services de stockage, utilisez les options de support décrites ci-dessous.</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Utilisation d'options de support en libre-service</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Documentation</block>
+  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">La documentation Workload Factory que vous consultez actuellement.</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Base de connaissances</block>
+  <block id="436f63b446dba5a418c698d49bd39718" category="list-text"><block ref="436f63b446dba5a418c698d49bd39718" category="inline-link-rx"></block></block>
+  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">Recherchez dans la base de connaissances de Workload Factory des articles utiles pour résoudre les problèmes.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Communautés</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">Rejoignez la communauté Workload Factory pour suivre les discussions en cours ou en créer de nouvelles.</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Créez un dossier de demande de support auprès du support NetApp</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Outre les options d'auto-support mentionnées ci-dessus, vous pouvez travailler avec un spécialiste du support NetApp pour résoudre tous les problèmes après avoir activé le service de support.</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Avant de commencer</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">Découvrez comment vous inscrire à de l'aide</block>
+  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">Pour utiliser la fonction *Créer un cas*, vous devez d'abord vous inscrire au support. Associez vos informations d'identification du site de support NetApp à votre identifiant Workload Factory. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>.</block>
+  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">Dans le coin supérieur droit de la console Workload Factory, sélectionnez *aide &gt; support*.</block>
+  <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">La sélection de cette option ouvre un nouvel onglet de navigateur sur la console BlueXP et charge le tableau de bord de support.</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Sur la page *Ressources*, choisissez l'une des options disponibles sous support technique :</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">Sélectionnez *appelez-nous* si vous souhaitez parler avec quelqu'un au téléphone. Vous serez dirigé vers une page netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">Sélectionnez *Créer un cas* pour ouvrir un ticket avec un spécialiste du support NetApp :</block>
+  <block id="d7d0da18fbb8f8f85c1364883fbdf4c7" category="list-text">*Service* : sélectionnez *Workload Factory*.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*Priorité du cas* : choisissez la priorité du cas, qui peut être faible, Moyen, élevé ou critique.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">Pour en savoir plus sur ces priorités, passez votre souris sur l'icône d'information située à côté du nom du champ.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*Description du problème* : fournir une description détaillée de votre problème, y compris les messages d'erreur ou les étapes de dépannage applicables que vous avez effectués.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*Adresses e-mail supplémentaires*: Entrez des adresses e-mail supplémentaires si vous souhaitez informer quelqu'un d'autre de ce problème.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Pièce jointe (facultatif)* : téléchargez jusqu'à cinq pièces jointes, une à la fois.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichier suivantes sont prises en charge : txt, log, PDF, jpg/JPEG, rtf, doc/docx, xls/xlsx et csv.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">Capture d'écran du formulaire Créer un dossier qui vous permet de créer un dossier auprès du support NetApp.</block>
+  <block id="b0c6c3ee60a29925d3f09cd609b79483" category="paragraph"><block ref="b0c6c3ee60a29925d3f09cd609b79483" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Une fois que vous avez terminé</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Une fenêtre contextuelle contenant votre numéro de dossier de support s'affiche. Un spécialiste du support NetApp va étudier votre dossier et vous recontacterons très rapidement.</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">Pour un historique de vos dossiers de support, vous pouvez sélectionner *Paramètres &gt; Chronologie* et rechercher les actions nommées "Créer un dossier de support". Un bouton situé à l'extrême droite vous permet de développer l'action pour afficher les détails.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">Il est possible que vous rencontriez le message d'erreur suivant lors de la création d'un dossier :</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">« Vous n'êtes pas autorisé à créer un dossier pour le service sélectionné »</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">Cette erreur peut signifier que le compte NSS et la société d'enregistrement auquel il est associé n'est pas la même société d'enregistrement pour le numéro de série du compte BlueXP (par exemple 960xxxx) ou le numéro de série de l'environnement de travail. Vous pouvez demander de l'aide en utilisant l'une des options suivantes :</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">Utilisez le chat du produit</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">Pour soumettre un dossier non technique, rendez-vous sur<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">Gestion de vos dossiers de demande de support (aperçu)</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">Vous pouvez afficher et gérer les dossiers de support actifs et résolus directement à partir de BlueXP. Vous pouvez gérer les dossiers associés à votre compte NSS et à votre entreprise.</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">La gestion des dossiers est disponible en tant qu'aperçu. Nous prévoyons d'affiner cette expérience et d'ajouter des améliorations dans les prochaines versions. Envoyez-nous vos commentaires à l'aide de l'outil de chat In-Product.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Notez ce qui suit :</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">Le tableau de bord de gestion des dossiers en haut de la page propose deux vues :</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">La vue de gauche affiche le nombre total de dossiers ouverts au cours des 3 derniers mois par le compte NSS utilisateur que vous avez fourni.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">La vue de droite affiche le nombre total de dossiers ouverts au cours des 3 derniers mois au niveau de votre entreprise en fonction de votre compte NSS utilisateur.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">Les résultats du tableau reflètent les cas liés à la vue que vous avez sélectionnée.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">Vous pouvez ajouter ou supprimer des colonnes d'intérêt et filtrer le contenu des colonnes telles que priorité et Statut. D'autres colonnes offrent uniquement des fonctions de tri.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Pour plus d'informations, consultez les étapes ci-dessous.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">Au niveau de chaque dossier, nous offrons la possibilité de mettre à jour les notes de dossier ou de fermer un dossier qui n'est pas déjà à l'état fermé ou en attente fermée.</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">Sélectionnez *case Management* et si vous y êtes invité, ajoutez votre compte NSS à BlueXP.</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">La page *gestion des cas* affiche les cas ouverts associés au compte NSS associé à votre compte utilisateur BlueXP. Il s'agit du même compte NSS qui apparaît en haut de la page *gestion NSS*.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Modifiez éventuellement les informations qui s'affichent dans le tableau :</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">Sous *cas de l'organisation*, sélectionnez *Afficher* pour afficher tous les cas associés à votre société.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">Modifiez la plage de dates en choisissant une plage de dates exacte ou en choisissant une autre période.</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">Capture d'écran de l'option au-dessus du tableau de la page gestion des cas qui vous permet de choisir une plage de dates exacte ou les 7 derniers jours, 30 derniers jours ou 3 derniers mois.</block>
+  <block id="4f7062c5c309a833cf46e4a1a5a5d366" category="paragraph"><block ref="4f7062c5c309a833cf46e4a1a5a5d366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtrez le contenu des colonnes.</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">Capture d'écran de l'option de filtre dans la colonne État qui vous permet de filtrer les dossiers correspondant à un état spécifique, comme actif ou fermé.</block>
+  <block id="8f624dee500d9670a27c4404084a7a62" category="paragraph"><block ref="8f624dee500d9670a27c4404084a7a62" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">Icône plus qui apparaît dans le tableau</block>
+  <block id="002f1c0a8cf4a68b888010ddef3a7f7e" category="list-text">Modifiez les colonnes qui apparaissent dans le tableau en sélectionnant, puis en <block ref="e55ec8dc42ae68d9326c51261c8a5f4f" category="inline-image-macro-rx" type="image"></block> choisissant les colonnes que vous souhaitez afficher.</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">Capture d'écran affichant les colonnes que vous pouvez afficher dans le tableau.</block>
+  <block id="72c5c65442a2c44e7f2546b8b4c957df" category="paragraph"><block ref="72c5c65442a2c44e7f2546b8b4c957df" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Icône avec trois points qui apparaît dans la dernière colonne du tableau</block>
+  <block id="000a1376035909240f559b8ab724030c" category="list-text">Gérer un dossier existant en sélectionnant et en <block ref="54181d1b918b28e5f92545f8b3b4a30c" category="inline-image-macro-rx" type="image"></block> sélectionnant l'une des options disponibles :</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Voir cas*: Afficher tous les détails sur un cas spécifique.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème ou sélectionner *Télécharger les fichiers* pour joindre jusqu'à cinq fichiers.</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et sélectionnez *Fermer le cas*.</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Capture d'écran qui montre les actions que vous pouvez effectuer après avoir sélectionné le menu dans la dernière colonne du tableau.</block>
+  <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="33a1ad2794fe25d296862b7540184587" category="summary">Découvrez comment intégrer Builders avec Perforce.</block>
+  <block id="b180a58461c8ba30183fdbd2c6f94400" category="paragraph">Intégrez Builders à Perforce Helix Visual client (P4V) pour que les développeurs puissent gérer vos espaces de travail à l'aide de la CLI Perforce. Les développeurs peuvent ainsi basculer rapidement entre les projets et les espaces de travail, ce qui économise du temps lors du développement.</block>
+  <block id="46a36d37c0e9a3ece7f56b7e840f1b27" category="inline-link">Fichier d'intégration P4V</block>
+  <block id="7c359035b875bf519bc132bc94cafdab" category="list-text">Téléchargez le<block ref="093cf1344a1daf53cd0d14d747e3c73f" category="inline-link-rx"></block>.</block>
+  <block id="f5a1a9adabcc26ef07e31dc7417fb595" category="list-text">Ouvrez P4V et accédez à *Outils* &gt; *gérer les outils* &gt; *onglets HTML*.</block>
+  <block id="78b6e5d76f833be63e70a3cd5925a698" category="list-text">Sélectionnez *Importer les onglets HTML*.</block>
+  <block id="e0ca1ffa7a7ff194727a7c27c1091abd" category="list-text">Sélectionnez le fichier XML d'intégration P4V et sélectionnez *Importer*.</block>
+  <block id="8021afdc93837bf89b4d2209922664f5" category="list-text">Accédez à *View* &gt; *Workload Factory*.</block>
+  <block id="ef61ce81e862e6ffc948f3f04f398a28" category="paragraph">L'usine de la charge de travail BlueXP  pour l'interface utilisateur Web Builders apparaît sous la forme d'un onglet HTML dans le client P4V.</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">Et la suite ?</block>
+  <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">Créez un plan de déploiement Amazon EC2 à l'aide de l'outil de conseil de migration</block>
+  <block id="87ca10f516e69b36084d36d28809162e" category="paragraph"><block ref="a5520c5bc95caf26ab1a143ec38e8340" category="inline-link-macro-rx"></block>.</block>
+  <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Les limitations connues identifient les plateformes, les périphériques ou les fonctions qui ne sont pas pris en charge par cette version du produit, ou qui ne fonctionnent pas correctement avec elle. Examinez attentivement ces limites.</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="doc">Limites connues</block>
+  <block id="406b6743d6cb27b667d9600f28f51fe8" category="section-title">Autorisations opérateur requises</block>
+  <block id="0e82925f3b5c46a20fb9c532864e2c43" category="paragraph">L'usine de charge de travail BlueXP  pour les constructeurs nécessite des autorisations de l'opérateur pour fonctionner correctement.</block>
+  <block id="fd940c262dc5e446ae0a0410b7142d79" category="summary">L'usine de workloads BlueXP  pour Builders est un outil de création d'environnement de développement rapide destiné aux développeurs de logiciels.</block>
+  <block id="978a9377e8509d60456ddc9a632751bf" category="doc">En savoir plus sur la fabrique de charges de travail BlueXP  pour les constructeurs</block>
+  <block id="48761a7a1c7cf21df76de124e4bf468a" category="paragraph">L'usine de workloads BlueXP  pour Builders est un outil de création d'environnement de développement rapide destiné aux développeurs de logiciels. Il permet de configurer rapidement des environnements de développement personnel, de gagner du temps et d'activer le libre-service pour les développeurs, tout en permettant aux équipes DevOps de garder le contrôle de l'infrastructure. Grâce à Builders, les développeurs de logiciels peuvent rapidement créer des espaces de travail sans avoir besoin de stockage de données spécialisé ni de comprendre l'infrastructure de développement.</block>
+  <block id="a177bea5834b437a33419c326a612169" category="section-title">Qu'est-ce que l'usine de charges de travail BlueXP  pour les constructeurs ?</block>
+  <block id="30d6cd98984294ee29a58d7bc3ecd9bb" category="paragraph">BlueXP  Workload Factory for Builders est conçu pour rationaliser la façon dont les développeurs gèrent et interagissent avec différentes versions de leurs logiciels. Les développeurs s'intègrent en toute transparence à Perforce Helix Core pour fournir des clones instantanés des versions logicielles, créant ainsi des espaces de travail prêts à l'emploi pour le développement, le QA et les processus ci/CD.</block>
+  <block id="acf699fcbcfc00b42704c6549f7573ef" category="paragraph">Avec Builders, vous pouvez facilement créer un projet et attribuer un volume qui représente votre environnement logiciel et ses artéfacts. Lorsque vous mettez à jour votre logiciel, vous pouvez prendre des instantanés du volume, en capturant l'état de votre logiciel à ce moment-là. Cela signifie que vous pouvez accéder instantanément à n'importe quelle version de votre logiciel sans avoir à resynchroniser avec le système de contrôle des versions, ce qui vous permet de gagner un temps précieux et d'économiser des ressources.</block>
+  <block id="69ced5671d5d5173c5ec8a09c78e6c22" category="paragraph">En exploitant les fonctionnalités de snapshot et de clonage de ONTAP, Builders améliore votre workflow de développement. Il permet d'accéder rapidement à plusieurs versions de vos logiciels, d'accélérer les cycles de développement et de réduire les délais de mise sur le marché.</block>
+  <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link-macro">présentation de l'usine des charges de travail</block>
+  <block id="092d6885b847467d6999738db9651764" category="paragraph">Pour plus d'informations sur l'usine de charge de travail, reportez-vous au <block ref="f3c978a33f5f67b2b7f311b0ac6d0acd" category="inline-link-macro-rx"></block>.</block>
+  <block id="f68c85d3ca9f728a18e779d0def20ddd" category="section-title">Usine de charge de travail BlueXP  pour les fonctions de constructeur</block>
+  <block id="28bbd42671616b45b56f40b0f97cd071" category="paragraph">L'usine de charge de travail BlueXP  pour les constructeurs offre les fonctionnalités suivantes :</block>
+  <block id="81271ea88c556e646a83ae8cb6874621" category="list-text">Créer, modifier et supprimer des projets</block>
+  <block id="235bfdfadd266ee4aaf8ed4ef7af3c9c" category="list-text">Créer des instantanés des versions logicielles définies</block>
+  <block id="2b1f12fc65d9945253b8cdbd567854de" category="list-text">Création et suppression d'espaces de travail (basés sur des clones)</block>
+  <block id="bee9403d4b2b1852994af86d7ac4a9e7" category="list-text">Créez des stratégies d'accès pour contrôler l'accès à un projet</block>
+  <block id="22837a5fe2297987c5ac780ef23bbfe1" category="list-text">Analysez l'utilisation de la capacité de chaque projet</block>
+  <block id="a1ebf2a229965aee245dee3784a6d935" category="list-text">Contrôlez les limites de taille de clone et la conservation des clones pour chaque projet</block>
+  <block id="46ba10149e48f982955997b9c27c31a0" category="list-text">Intégration avec des systèmes de contrôle des versions tels que Perforce</block>
+  <block id="c11e3b8e48a7f97cb6cb2951dbceebea" category="section-title">Projets et espaces de travail dans Builders</block>
+  <block id="95b4a45851bf07d5318bb2244d28fcc7" category="paragraph">Lorsque vous utilisez Builders, vous créez un projet et attribuez un volume qui représente votre environnement logiciel et ses artefacts. Chaque fois que vous créez une nouvelle version du logiciel, vous devez resynchroniser les données de volume et créer un snapshot de projet pour marquer l'état du volume comme une version connue. Le volume source du projet peut recevoir des mises à jour en continu et avoir plusieurs snapshots pour marquer plusieurs versions. Vous pouvez utiliser chaque instantané immédiatement en tant que clone instantané, référentiel modifiable dédié ou partagé disponible pour les développeurs, les processus d'assurance qualité ou de création. Un clone dans le contexte d'une version logicielle spécifique est un espace de travail.</block>
+  <block id="5e403a4c3b152d7f395a9974ccfd4e4c" category="section-title">Modes de fonctionnement en usine de la charge de travail</block>
+  <block id="63aab450b65202ef9696852b9418f590" category="paragraph">Trois modes opérationnels différents - _Basic_, _read_ et _automate_ - offrent des options flexibles pour le déploiement à l'intérieur et à l'extérieur de l'usine de charge de travail. Obtenez une valeur immédiate à zéro confiance en _Basic_ mode avec des extraits de code pour une utilisation en dehors de l'usine de la charge de travail. Bénéficiez d'une valeur incrémentielle avec une confiance incrémentale en modes _read_ et _automate_.</block>
+  <block id="eb6e457556694fbc8d187534ac1188e1" category="inline-link-macro">modes de fonctionnement en usine de la charge de travail</block>
+  <block id="7bb004aef4b112c40189995d006d040c" category="paragraph">En savoir plus sur <block ref="eda3e48a35318d9f8306be63aaa1ab6b" category="inline-link-macro-rx"></block>.</block>
+  <block id="f63ee042c60cee6f631e4d8e0414dd00" category="section-title">Automatisation avec la codeplug d'usine de la charge de travail</block>
+  <block id="e8d2772773d0b560ee5057d9b413b85b" category="paragraph">L'usine de charge de travail intègre l'automatisation avec la _Codebox_. La Codebox offre les avantages d'automatisation suivants :</block>
+  <block id="f1214f35af0ff103c79251078e169af6" category="list-text">*Génération de code snippet* : des snippets IAC (Infrastructure-as-Code) sont générés lors de la création de ressources, permettant une intégration transparente avec les workflows d'orchestration existants.</block>
+  <block id="dbebcf8b009c3066f6c2e41d9d151db3" category="list-text">*Co-pilote Infrastructure-as-code*: Le Codebox est un co-pilote IAC (Infrastructure-as-code) qui aide les développeurs et le DevOps à générer du code pour exécuter toute opération prise en charge par une fabrique de charges de travail.</block>
+  <block id="d8135e6fae6748dcba5e9d108c9af427" category="list-text">*Afficheur de code et catalogue d'automatisation*: La Codebox fournit un afficheur de code pour une analyse rapide de l'automatisation et un catalogue d'automatisation pour une réutilisation rapide future.</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Le coût</block>
+  <block id="2089c6b820b86b20a7f7888582f8fdc1" category="paragraph">L'utilisation de la fonction Builders de l'usine de charge de travail est sans frais.</block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">Licences</block>
+  <block id="1da0e8d0baff6b19bb0cc4aed36be214" category="paragraph">Aucune licence spéciale n'est requise de la part de NetApp pour utiliser les fonctionnalités Builders de la fabrique de charges de travail.</block>
+  <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">Régions prises en charge</block>
+  <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link">Affichez les régions Amazon prises en charge.</block>
+  <block id="762e82c7fc7a9b2f0a9502b49f71b96b" category="paragraph">Les constructeurs sont pris en charge dans toutes les régions commerciales où FSX pour ONTAP est pris en charge.<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
+  <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">Les régions AWS suivantes ne sont pas prises en charge :</block>
+  <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">Régions de Chine</block>
+  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud (USA)</block>
+  <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">Le cloud secret</block>
+  <block id="151ef168e17772f7a361db78a0c86552" category="list-text">Meilleur cloud secret</block>
+  <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">Obtenir de l'aide</block>
+  <block id="da444b283df699667b2316206972bdfe" category="paragraph">Amazon FSX pour NetApp ONTAP est une solution propriétaire AWS. Pour toute question ou tout problème de support technique associé à votre système de fichiers FSX for ONTAP, à votre infrastructure ou à toute solution utilisant ce service, utilisez le centre de support de votre console de gestion AWS pour ouvrir un dossier de support avec AWS. Sélectionnez le service “FSX pour ONTAP” et la catégorie appropriée. Fournissez les informations restantes nécessaires pour créer un dossier de demande de support AWS.</block>
+  <block id="49621bd29ae42da955d4a0c135d19e86" category="inline-link-macro">Obtenez de l'aide pour Builders pour l'usine de charge de travail</block>
+  <block id="65dd0f78a3b72996981e906ad877d452" category="paragraph">Pour des questions d'ordre général sur les applications et services d'usine de charge de travail ou d'usine, reportez-vous à <block ref="218312b2d9c914b9d139ff8e26e1dc71" category="inline-link-macro-rx"></block>.</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Mentions légales</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Les mentions légales donnent accès aux déclarations de copyright, aux marques, aux brevets, etc.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Droits d'auteur</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marques déposées</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, le logo NETAPP et les marques mentionnées sur la page des marques commerciales NetApp sont des marques commerciales de NetApp, Inc. Les autres noms de sociétés et de produits peuvent être des marques commerciales de leurs propriétaires respectifs.</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Brevets</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Vous trouverez une liste actuelle des brevets appartenant à NetApp à l'adresse suivante :</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Politique de confidentialité</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Source ouverte</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.</block>
+  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">Usine de workloads BlueXP</block>
+  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
+  <block id="727a3a4d7dff6cc4c7c2079c82737b77" category="summary">Gérez les instances Microsoft SQL Server en usine de workloads pour les bases de données.</block>
+  <block id="f1c3944d872285ff8f265eae2a58242a" category="doc">Gérer les projets de Builders</block>
+  <block id="8ccab38a4433bff5ae8b91cb0d8cd0dd" category="paragraph">Vous pouvez gérer des projets Builders pour contrôler la gestion de votre code et de vos artéfacts pour chaque projet dans l'usine de workloads BlueXP  pour les constructeurs.</block>
+  <block id="be86ca474df5e14056bc0f20d2cdb767" category="section-title">Créer un projet</block>
+  <block id="18f61d0eac6bce18a43123d572f97f9c" category="paragraph">Vous pouvez créer un nouveau projet Builders afin de tirer parti des fonctionnalités de protection des données de votre système de fichiers Amazon FSX pour NetApp ONTAP pour votre code et vos artéfacts.</block>
+  <block id="782161a6e01d95a8a5860f840ff2d8ff" category="list-text">Dans la mosaïque Builders, sélectionnez *Créer un projet*.</block>
+  <block id="3b6aee0d7586fa2e996955209e86b05d" category="list-text">Sur la page Créer un projet, fournissez les informations suivantes :</block>
+  <block id="7ee7bbb308ec85b0e9fa63e91fe6f62f" category="list-text">*Nom du projet* : saisissez un nom pour le projet.</block>
+  <block id="0cca7644aa0cba3c4f8ebb05e857a455" category="list-text">*Description* : saisissez une description pour le projet.</block>
+  <block id="ba325028343b8f10b90df796110a4920" category="list-text">*Système de fichiers* : fournissez les informations suivantes :</block>
+  <block id="784ff3f5246267e4ed3865e17c3945e7" category="list-text">*Informations d'identification* : sélectionnez les informations d'identification Amazon AWS à utiliser. Les constructeurs utilisent ces informations d'identification pour découvrir les systèmes de fichiers FSX for ONTAP que vous pouvez utiliser avec ce projet et pour créer des clones et des instantanés de projets.</block>
+  <block id="8f4fb3217144e591177c8ab486235b32" category="list-text">*Région* : sélectionnez la région dans laquelle réside ce système de fichiers FSX pour ONTAP.</block>
+  <block id="66386ee0d90d8185f4bf8daf0ad53e14" category="list-text">*FSX pour système de fichiers ONTAP* : sélectionnez un système de fichiers FSX pour ONTAP à utiliser avec ce projet.</block>
+  <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">En savoir plus sur les liens</block>
+  <block id="d81239812675b4359f2d53d5493ec461" category="paragraph">Vous ne pouvez sélectionner que les systèmes de fichiers configurés avec un lien.<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>.</block>
+  <block id="aac901acde2d9c0b975f3df90da3cc01" category="list-text">*Choisir un volume*: Sélectionnez un volume sur lequel stocker le projet; Builders utilise ce volume comme référentiel logiciel.</block>
+  <block id="73699ce7a6810990bfdfcd9d66248475" category="paragraph">Vous pouvez uniquement sélectionner les volumes configurés en tant que partage NFS.</block>
+  <block id="54707d044b3f7dbd9190e90c0c26da4b" category="list-text">*Politiques d'opération* : fournir des limites pour les clones de projet :</block>
+  <block id="a809216c7c46f6741eb4e0a90cc4cd09" category="list-text">*Rétention maximale en jours* : saisissez le nombre maximal de jours pendant lesquels un clone doit être conservé. Au bout de ce nombre de jours, l'usine de workloads supprime le clone.</block>
+  <block id="1b50a415b7236d521d4caff453dc9d8c" category="list-text">*Nombre maximal de clones par utilisateur ou groupe* : entrez le nombre maximal de clones pouvant être provisionnés pour un utilisateur ou un groupe.</block>
+  <block id="1aa5ccae7f0dcce26f22d0ad5c7ad270" category="list-text">*Taille maximale du clone en Gio* : entrez la taille maximale en Gio d'un clone de projet.</block>
+  <block id="60df076fa27b46615c02a69a695d47fa" category="list-text">*Stratégies d'accès* : accorder explicitement l'accès au projet à des utilisateurs ou groupes spécifiques :</block>
+  <block id="872c4bee2d347ff2c530983493966657" category="list-text">*Étendue de l'application de la stratégie* : saisissez des adresses IP uniques ou des plages d'adresses IP pour limiter l'accès au projet à ces adresses ou plages IP uniquement.</block>
+  <block id="6103d4c0df4fa9e11f3ff7d4206cb2c6" category="paragraph">Par exemple :<block ref="b80ff0a24c4ff47488b3e445109bfe19" prefix=" " category="inline-code"></block></block>
+  <block id="fbfbd4c7a8f9575234f1d85a65b369a0" category="list-text">*Identificateurs d'utilisateur ou de groupe* : saisissez des identificateurs d'utilisateur ou de groupe pour limiter l'accès au projet à ces utilisateurs ou groupes uniquement.</block>
+  <block id="601e4c99c321f541ac2b8eb0510576a5" category="paragraph">Par exemple :<block ref="6edf26f6e0badff12fca32b16db38bf2" prefix=" " category="inline-code"></block></block>
+  <block id="48ddfff7668ec69b4b4aba6cb8178ea2" category="paragraph">Le projet est créé et apparaît dans la liste des projets de la page projets.</block>
+  <block id="5adc04409266bb451a371fe1fb4271b5" category="section-title">Afficher les projets existants</block>
+  <block id="c59f453c07a9cb3b6a8798e686127634" category="paragraph">Vous pouvez afficher les projets existants créés dans l'usine de charges de travail BlueXP  pour les constructeurs en suivant ces étapes.</block>
+  <block id="782a66c1109cc7c69c203553b031a2c9" category="list-text">Dans la mosaïque Builders, sélectionnez *aller à la page projets*.</block>
+  <block id="8d316038ebf1829df9f37bc4382f5c99" category="list-text">Afficher les projets existants répertoriés sur la page projets.</block>
+  <block id="83879b61fc6dcf133f90392c69f25d38" category="section-title">Modifier un projet</block>
+  <block id="7725fdf63a5f6cb955bcaa6473dd1c51" category="paragraph">Vous pouvez modifier les paramètres d'un projet à tout moment.</block>
+  <block id="2041999f6b6b70199d1267ee84f453a6" category="inline-image-macro">le bouton d'option</block>
+  <block id="d0db1d4c3851445a0852041a52b296c9" category="list-text">Sur la page projets, sélectionnez <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> le projet à modifier.</block>
+  <block id="66b51b35cd8204795ab7fee998410a48" category="list-text">Apportez les modifications nécessaires à la configuration du projet.</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">Sélectionnez *Enregistrer*.</block>
+  <block id="b6dd3178b375027143d1694361b475e4" category="list-text">Sur la page projets, sélectionnez <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> le projet à capturer.</block>
+  <block id="0cd11b8225f7c80bcdc81d2f77114559" category="list-text">Dans le menu résultat, sélectionnez *Créer un instantané*.</block>
+  <block id="a8ef1104b5eb15d48613229daace44e9" category="list-text">Dans la boîte de dialogue *Créer un instantané*, choisissez un nom pour l'instantané et sélectionnez *Créer*.</block>
+  <block id="332e8f9755f014bf425402dbc3cb5c58" category="section-title">Afficher les espaces de travail d'un projet</block>
+  <block id="9cfa855917c2aba68c914931f8189bc6" category="paragraph">Un clone ou instantané d'un projet est appelé espace de travail. Lorsque vous créez un espace de travail, il est conservé tant que la stratégie d'opération du projet le permet. Vous pouvez afficher les espaces de travail existants pour un projet en suivant ces étapes.</block>
+  <block id="63b8f67914ccd74aae4ec183f8b47a02" category="list-text">Sur la page projets, choisissez un projet et sélectionnez *Afficher*.</block>
+  <block id="afe6f323353ce261146c3950281e3680" category="list-text">Afficher le statut et les détails de tous les espaces de travail pour ce projet.</block>
+  <block id="8ca9805ea33bde88fc83f8cc3dd200f0" category="list-text">Si vous voyez des alertes ou des avertissements pour un espace de travail, passez le curseur sur l'icône d'alerte ou d'avertissement pour voir la raison.</block>
+  <block id="bb92ae025a739a684fde28b70cb90df5" category="section-title">Supprimer un projet</block>
+  <block id="7d597c8bc9a2f2e7d749c445b50fe509" category="paragraph">Vous pouvez supprimer un projet lorsqu'il n'est plus nécessaire en suivant ces étapes.</block>
+  <block id="bafa817ae318f3f9b180bd46a2e63961" category="list-text">Sur la page projets, sélectionnez <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> le projet à supprimer.</block>
+  <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">Sélectionnez *Supprimer*.</block>
+  <block id="8186fba50e8e4d5abb2f25404b3ac987" category="list-text">Dans la boîte de dialogue de confirmation, sélectionnez *Supprimer*.</block>
+  <block id="6acbdc8ddf8c914f95d450771ab7cede" category="paragraph">Le projet est supprimé et tout code ou artefact associé au projet est supprimé du volume. Les snapshots et les clones du projet sont conservés.</block>
+  <block id="22358702cb945913fe9b03fc1642777a" category="summary">Les bases de données ont trois modes différents qui ont des exigences différentes.</block>
+  <block id="6db8b72b7bbe43f04d2b9ad1751e1fe6" category="doc">Démarrage rapide pour les constructeurs</block>
+  <block id="0a900739ea1484f6a212a7ceda0d619c" category="paragraph">Commencez à créer un projet Builders. Les administrateurs et les responsables d'équipe peuvent utiliser Builders pour gérer des projets et des espaces de travail pour les équipes de développeurs.</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Une seule</block>
+  <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Connectez-vous à l'usine de la charge de travail</block>
+  <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">configurez un compte avec une usine de charges de travail</block>
+  <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">Vous devez vous<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block> connecter à l'aide de l'un des<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>.</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Deux</block>
+  <block id="b36a952e38561cb86fdb6a473044fce0" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Ajoutez les identifiants et les autorisations AWS à votre compte</block>
+  <block id="6b2dd6734a7cf2cd8fa1690ca19ccd80" category="paragraph">Vous pouvez utiliser l'usine de workloads en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout des informations d'identification AWS à l'usine de workloads en mode _Read_ ou _automate_ donne au compte d'usine de votre workload les autorisations nécessaires pour créer et gérer des systèmes de fichiers FSX pour ONTAP, et pour déployer et gérer des projets Builders.</block>
+  <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">Découvrez comment ajouter des informations d'identification et des autorisations</block>
+  <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>.</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Trois</block>
+  <block id="fb43e1b304931d6b7759de94a993863f" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Configurez votre environnement pour répondre aux exigences de Builders</block>
+  <block id="fecfde27c537152de469ba41e82d7a28" category="paragraph">Vous aurez besoin d'un système de fichiers FSX for ONTAP déployé et découvert qui contient au moins un volume configuré comme partage NFS.</block>
+  <block id="4a9fae25b97d697ff8477c0814c42315" category="inline-link-macro">En savoir plus sur les exigences de Builders</block>
+  <block id="1a7acd91f937d17469192f4af6d28da4" category="paragraph"><block ref="d5e2584cb83faed7a7062a3e6e2d8a2f" category="inline-link-macro-rx"></block>.</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Quatre</block>
+  <block id="ba815000db4db7326e8782f47f58d7be" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Intégration avec d'autres services</block>
+  <block id="79b7decebd7c3aca08634bb967cd7137" category="paragraph">Intégrez Builders à d'autres services tels qu'un portail de services ou Perforce Helix Core à l'aide de l'API REST Workload Factory.</block>
+  <block id="ec8bba764a3cc41f1e4cf229730c5716" category="inline-link-macro">Découvrez comment intégrer Builders avec Perforce</block>
+  <block id="ef287ab90c9daee09c6045ffbcf3e984" category="paragraph"><block ref="e9e13e6773a86301eeb40b68191f2966" category="inline-link-macro-rx"></block>.</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">Et la suite</block>
+  <block id="88c42892f9e1c911a29a7014b69dfc2f" category="inline-link-macro">créer un projet</block>
+  <block id="7467d1fcb66c06648d2208ce64162c0d" category="paragraph">Vous pouvez désormais <block ref="48146dbc982d6a3ba456c1f10aacb1a9" category="inline-link-macro-rx"></block>assurer une gestion rapide et efficace du code et des artéfacts pour les équipes de développeurs.</block>
+  <block id="bcb714c2eb89c8ef02579a621f95e48c" category="summary">Assurez-vous que l'usine de workloads et AWS sont correctement configurées avant de commencer à utiliser l'usine de workloads BlueXP  pour les constructeurs. Vous devez notamment disposer de vos identifiants de connexion AWS, d'un système de fichiers FSX pour ONTAP déployé, et bien plus encore.</block>
+  <block id="7860bfc83777aac923d73f1002162f9d" category="doc">Exigences des constructeurs</block>
+  <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">Connexion et compte d'usine de la charge de travail</block>
+  <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">Identifiants et autorisations AWS</block>
+  <block id="2e9df4fc7da7ba6ad813c1450e8f82ca" category="list-text">Vous devez ajouter des informations d'identification AWS à l'usine de workloads avec des autorisations automatisées, ce qui signifie que vous utiliserez l'usine de workloads en _automatisation_ mode pour Builders.</block>
+  <block id="5145374f219e1c177ab5588a5344aa6e" category="inline-link">Découvrez comment ajouter des identifiants AWS à l'usine de workloads</block>
+  <block id="1b0cdac06552abc95fe86270037368b2" category="paragraph">Les autorisations _Basic_ mode et _Read_ mode ne sont pas prises en charge pour le moment. <block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
+  <block id="e48bc5875c01dd007b7b2a370e879cde" category="list-text">FSX pour le système de fichiers ONTAP</block>
+  <block id="c16810aa96ec44a060863610996db3f6" category="list-text">Vous avez besoin d'au moins un système de fichiers FSX pour ONTAP :</block>
+  <block id="cf935c2a5823110e8a09c3289b67514a" category="list-text">Le système de fichiers sera utilisé par Builders pour stocker les projets et les espaces de travail que vous créez.</block>
+  <block id="c076421513a5b28b674cdd0d818b4476" category="paragraph">Ce système de fichiers FSX pour ONTAP doit utiliser des volumes FlexVol. Les volumes FlexGroup ne sont pas pris en charge.</block>
+  <block id="0d8ba413f648e51fef4fb209cc7b48a1" category="list-text">Vous devez connaître la région AWS, le VPC et le sous-réseau où réside le système de fichiers AWS FSX pour ONTAP.</block>
+  <block id="a0241ec69557b1efd3602bf4d51ce98e" category="list-text">Vous aurez besoin d'au moins un volume dans le système de fichiers avec la configuration suivante :</block>
+  <block id="a138b35d2cf3191dc5044ce9b7c8afc6" category="list-text">Le volume doit être configuré comme un partage NFS.</block>
+  <block id="d22045fbfcf6f7c1c69b271245369732" category="list-text">Le système de fichiers doit être configuré avec un lien.<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>.</block>
+  <block id="1f44141a0f383810dac8c932e0d76754" category="list-text">Vous devrez tenir compte des paires clé/valeur que vous souhaitez appliquer aux ressources AWS faisant partie de ce déploiement (facultatif).</block>
+  <block id="d5858b81edfda50f75f7994c971764f0" category="inline-link">Découvrez comment déployer et gérer les systèmes de fichiers FSX pour ONTAP</block>
+  <block id="7d57ea8255b8142e76fbb442ea9a782f" category="paragraph"><block ref="7d57ea8255b8142e76fbb442ea9a782f" category="inline-link-rx"></block></block>
+  <block id="284b0f618c1cefab43ce3a83c106ac42" category="summary">Restaurez un clone sandbox en usine de workloads pour les bases de données.</block>
+  <block id="ba981915546be1bb9a1a5f34021cb317" category="doc">Restaurez un clone sandbox en usine de workloads pour les bases de données</block>
+  <block id="119092644393b63350941f731f4e02dd" category="paragraph">Restaurez la version d'origine d'un clone de base de données au moment de sa création.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">Description de la tâche</block>
+  <block id="36bfe5aa9dbfbad068e6721ddea626bb" category="paragraph">Lorsque vous clonez une base de données, le clone à la création est un clone _baseline_. Les données de la base de données clonée sont les mêmes que celles de la base de données source au moment de la création. Au fur et à mesure que les données d'un clone de base de données sandbox changent au fil du temps, vous pouvez rétablir les données à la base lors de la création du clone. Cette opération s'appelle la redéfinition de la base d'un clone. La redéfinition de la base d'un clone plutôt que de créer un nouveau clone permet de gagner de l'espace. Toutefois, toute modification apportée au clone sandbox sera supprimée.</block>
+  <block id="e5d3c7248ff4540f88c13fbf9252d0a3" category="inline-link-macro">console d'usine de charge de travail</block>
+  <block id="2e600fc81eb21acd31aa44d1697dc84f" category="list-text">Connectez-vous au <block ref="fe6e1b2479e1125e03c713ad62b5343f" category="inline-link-macro-rx"></block>.</block>
+  <block id="a22aeb541c430c47c35bcc20690ea51a" category="list-text">Dans la mosaïque bases de données, sélectionnez *aller à bases de données Inventaire*.</block>
+  <block id="a1029809e498e81eaada752a6b08cd7c" category="list-text">Dans bases de données, sélectionnez l'onglet *sandbox*.</block>
+  <block id="e25b967c54d3008b230ffd4e18be90cb" category="list-text">Dans l'onglet sandbox, cliquez sur le menu trois points du clone sandbox à rétablir.</block>
+  <block id="0975db7a2f5f2be54dab36d8b76af890" category="list-text">Sélectionnez *Re-Baseline*.</block>
+  <block id="ee39d3157a6b84476b1e530c43e7e0af" category="list-text">Dans la boîte de dialogue Re-Baseline, cliquez sur *Re-Baseline*.</block>
+  <block id="60662f13dd467742de00d5852483a73d" category="summary">Fractionner un clone sandbox à partir de la base de données source pour créer une nouvelle base de données.</block>
+  <block id="5697f3fa0c3bfd3435b1268d395d044b" category="doc">Fractionner un clone sandbox à partir de la base de données source</block>
+  <block id="7e63ac86d460cf0995a5ac132e4c8092" category="paragraph">Le fractionnement d'un clone sandbox à partir de sa base de données source crée une nouvelle base de données qui consomme une certaine capacité de stockage. Le clone est supprimé lorsque le fractionnement est terminé et que la nouvelle base de données apparaît dans l'inventaire.</block>
+  <block id="bad5772919d73bf3b17433524b58ead6" category="inline-link-macro">augmenter la capacité du système de fichiers</block>
+  <block id="eed30e1e95c32e95da513640e3e7e215" category="paragraph">Évaluez la capacité de stockage nécessaire pour la nouvelle base de données. Si nécessaire, <block ref="ecf193ca0846a4137269dac878e92281" category="inline-link-macro-rx"></block> pour le système de fichiers FSX pour ONTAP avant de commencer.</block>
+  <block id="be0c57159940db106da8c592b3a6f1a7" category="list-text">Dans l'onglet sandbox, cliquez sur le menu trois points du clone sandbox que vous souhaitez fractionner.</block>
+  <block id="54e2c4dd2b9e992b761540f131754e81" category="list-text">Sélectionnez *Fractionner*.</block>
+  <block id="05b751f4cbd4ae2611783e6ab193a961" category="list-text">Dans la boîte de dialogue Fractionner, cliquez sur *Fractionner*.</block>
+  <block id="056634bec4a153903ebb9b769277f4d7" category="summary">Avant d'ouvrir un dossier de demande de support auprès du support technique NetApp, vous devez ajouter un compte sur le site de support NetApp à l'usine de la charge de travail, puis vous inscrire au support.</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">S'inscrire pour obtenir de l'aide</block>
+  <block id="996ad73a480311d4f86d6946935389d2" category="paragraph">Le support doit être enregistré pour bénéficier du support technique spécifique à Workload Factory et à ses solutions et services de stockage. Vous devez vous inscrire au support depuis la console BlueXP, qui est une console web distincte de Workload Factory.</block>
+  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">L'inscription au support n'active pas le support NetApp pour un service de fichiers de fournisseur cloud. Pour obtenir un support technique concernant un service de fichiers d'un fournisseur cloud, son infrastructure ou toute solution utilisant le service, reportez-vous à la section « obtention d'aide » de la documentation Workload Factory de ce produit.</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Présentation de l'inscription au support</block>
+  <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">L'enregistrement de votre abonnement au support ID de compte (votre numéro de série 960xxxxxxxxx à 20 chiffres, disponible sur la page des ressources de support de BlueXP) sert d'ID d'abonnement au support. Chaque abonnement au support BlueXP au niveau du compte doit être enregistré.</block>
+  <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">L'enregistrement permet de proposer des fonctionnalités telles que l'ouverture de tickets de support et la génération automatique de tickets de support. L'inscription est terminée en ajoutant des comptes du site de support NetApp (NSS) à BlueXP, comme décrit ci-dessous.</block>
+  <block id="856edc4caec68fece6859c4be9360f3c" category="section-title">Enregistrez votre compte pour bénéficier du support NetApp</block>
+  <block id="2d6573b6ae4c51dc24e58109473f2490" category="paragraph">Pour vous inscrire au support et activer le support, un utilisateur de votre compte doit associer un compte sur le site de support NetApp à sa connexion BlueXP. Le fait de vous inscrire au support NetApp dépend de la présence ou non d'un compte sur le site de support NetApp (NSS).</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Client existant avec un compte NSS</block>
+  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">Si vous êtes client NetApp avec un compte NSS, il vous suffit de vous inscrire pour obtenir du support dans BlueXP.</block>
+  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Sélectionnez *informations d'identification utilisateur*.</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Sélectionnez *Ajouter des informations d'identification NSS* et suivez l'invite authentification du site de support NetApp (NSS).</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Pour confirmer que le processus d'enregistrement a réussi, sélectionnez l'icône aide et sélectionnez *support*.</block>
+  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">La page *Ressources* doit indiquer que votre compte est enregistré pour le support.</block>
+  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Capture d'écran affichant un numéro de série de compte, une case à cocher verte et le texte enregistré pour le support.</block>
+  <block id="fa7897454f637026faa3e00ccbfec239" category="paragraph"><block ref="fa7897454f637026faa3e00ccbfec239" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">Notez que les autres utilisateurs BlueXP ne verront pas ce même statut d'enregistrement de support s'ils n'ont pas associé de compte sur le site de support NetApp à leur identifiant BlueXP. Toutefois, cela ne signifie pas que votre compte BlueXP n'est pas enregistré pour le support. Tant qu'un utilisateur du compte a suivi ces étapes, votre compte a été enregistré.</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">Client existant mais aucun compte NSS</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">Si vous possédez déjà des licences et des numéros de série NetApp, mais que vous possédez un compte NSS, vous devez créer un compte NSS et l'associer à votre connexion BlueXP.</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">Formulaire d'inscription de l'utilisateur du site de support NetApp</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">Créez un compte sur le site de support NetApp en complétant le<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">Veillez à sélectionner le niveau d'utilisateur approprié, qui est généralement *client/utilisateur final NetApp*.</block>
+  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">Veillez à copier le numéro de série du compte BlueXP (960xxxx) utilisé ci-dessus pour le champ Numéro de série. Le traitement du compte sera ainsi accéléré.</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">Associez votre nouveau compte NSS à votre connexion BlueXP en suivant les étapes décrites sous <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Découvrez la toute nouvelle gamme NetApp</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Si vous êtes nouveau chez NetApp et que vous ne disposez pas d'un compte NSS, effectuez chacune des étapes ci-dessous.</block>
+  <block id="f5d7029ed18f998c0a9d780b2554e538" category="list-text">Recherchez le numéro de série de votre identifiant de compte sur la page des ressources de support.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Capture d'écran du menu aide où support est la première option répertoriée</block>
+  <block id="55adf589d087b17fca134b34f65498ed" category="paragraph"><block ref="55adf589d087b17fca134b34f65498ed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Site d'inscription au support NetApp</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">Accédez à<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> et sélectionnez *Je ne suis pas un client NetApp enregistré*.</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">Remplissez les champs obligatoires (ceux avec des astérisques rouges).</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">Dans le champ *Product Line*, sélectionnez *Cloud Manager*, puis votre fournisseur de facturation applicable.</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">Copiez le numéro de série de votre compte à l'étape 2 ci-dessus, vérifiez sa sécurité, puis lisez la Déclaration de confidentialité des données NetApp.</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">Un e-mail est immédiatement envoyé à la boîte aux lettres fournie pour finaliser cette transaction sécurisée. Assurez-vous de vérifier vos dossiers de courrier indésirable si l'e-mail de validation n'arrive pas dans quelques minutes.</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Confirmez l'action à partir de l'e-mail.</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">La confirmation de la soumission de votre demande à NetApp et vous recommande de créer un compte sur le site de support NetApp.</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">Veillez à copier le numéro de série du compte (960xxxx) utilisé ci-dessus pour le champ Numéro de série. Le traitement du compte sera ainsi accéléré.</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp devrait vous contacter au cours de ce processus. Il s'agit d'un exercice d'intégration unique pour les nouveaux utilisateurs.</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">Une fois que vous possédez votre compte sur le site de support NetApp, associez-le à votre connexion BlueXP en suivant les étapes décrites sous <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="b695d69d992cf41ed6cb2eae330d2d9a" category="summary">Découvrez les nouveautés de l'usine de workloads pour les bases de données.</block>
+  <block id="490414e0366b091220802d406e52c076" category="doc">Quoi de neuf</block>
+  <block id="b3c5650c2bbe2cf7e9b39aa77519169b" category="paragraph">Découvrez les nouveautés de la fonctionnalité Builders de l'usine de charge de travail.</block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">1 décembre 2024</block>
+  <block id="77ecc188e3683ff647e9350cea980265" category="sidebar">Créez et gérez des projets de développement logiciel en plus du stockage du système de fichiers FSX pour ONTAP dans l'usine de workloads BlueXP .</block>
+  <block id="4d35766d2a6ab8f1b3cb40a730f9b731" category="sidebar">Documentation relative à la charge de travail BlueXP  pour les constructeurs</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencez</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notes de mise à jour</block>
+  <block id="360209a9194a7a144c60dc66473ddb6e" category="sidebar">En savoir plus sur Builders</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">Démarrage rapide</block>
+  <block id="aafc12cda2bcbe76316f336998489855" category="sidebar">Utilisez Builders</block>
+  <block id="f727cac0ddae92d9de3567e9a3b11511" category="sidebar">Gérer des projets</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Connaissances et support</block>
+  <block id="ca98e880382bb99d93f1590464fba67d" category="sidebar">Documents destinés aux créateurs de workloads</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Quoi de neuf</block>
+  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="sidebar">De formation</block>
+  <block id="b3484ff5a2e6115fc61edc79c83f8c4c" category="sidebar">Utilisez les charges de travail Builders</block>
+</blocks>

@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: known-limitations.html 
+keywords: limitations, builders 
+summary: Les limitations connues identifient les plateformes, les périphériques ou les fonctions qui ne sont pas pris en charge par cette version du produit, ou qui ne fonctionnent pas correctement avec elle. Examinez attentivement ces limites. 
+---
+= Limites connues
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les limitations connues identifient les plateformes, les périphériques ou les fonctions qui ne sont pas pris en charge par cette version du produit, ou qui ne fonctionnent pas correctement avec elle. Examinez attentivement ces limites.
+
+
+
+== Autorisations opérateur requises
+
+L'usine de charge de travail BlueXP  pour les constructeurs nécessite des autorisations de l'opérateur pour fonctionner correctement.

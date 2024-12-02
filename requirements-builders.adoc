@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: requirements-builders.html 
+keywords: Builders, FSx, project, projects 
+summary: 'Assurez-vous que l"usine de workloads et AWS sont correctement configurées avant de commencer à utiliser l"usine de workloads BlueXP  pour les constructeurs. Vous devez notamment disposer de vos identifiants de connexion AWS, d"un système de fichiers FSX pour ONTAP déployé, et bien plus encore.' 
+---
+= Exigences des constructeurs
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Assurez-vous que l'usine de workloads et AWS sont correctement configurées avant de commencer à utiliser l'usine de workloads BlueXP  pour les constructeurs. Vous devez notamment disposer de vos identifiants de connexion AWS, d'un système de fichiers FSX pour ONTAP déployé, et bien plus encore.
+
+Connexion et compte d'usine de la charge de travail:: Vous devez vous https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configurez un compte avec une usine de charges de travail"^] connecter à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+Identifiants et autorisations AWS:: Vous devez ajouter des informations d'identification AWS à l'usine de workloads avec des autorisations automatisées, ce qui signifie que vous utiliserez l'usine de workloads en _automatisation_ mode pour Builders.
+
+
+Les autorisations _Basic_ mode et _Read_ mode ne sont pas prises en charge pour le moment. https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Découvrez comment ajouter des identifiants AWS à l'usine de workloads"^]
+
+FSX pour le système de fichiers ONTAP:: Vous avez besoin d'au moins un système de fichiers FSX pour ONTAP :
++
+--
+* Le système de fichiers sera utilisé par Builders pour stocker les projets et les espaces de travail que vous créez.
++
+Ce système de fichiers FSX pour ONTAP doit utiliser des volumes FlexVol. Les volumes FlexGroup ne sont pas pris en charge.
+
+* Vous devez connaître la région AWS, le VPC et le sous-réseau où réside le système de fichiers AWS FSX pour ONTAP.
+* Vous aurez besoin d'au moins un volume dans le système de fichiers avec la configuration suivante :
++
+** Le volume doit être configuré comme un partage NFS.
+** Le système de fichiers doit être configuré avec un lien. https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["En savoir plus sur les liens"^].
+
+
+* Vous devrez tenir compte des paires clé/valeur que vous souhaitez appliquer aux ressources AWS faisant partie de ce déploiement (facultatif).
++
+https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["Découvrez comment déployer et gérer les systèmes de fichiers FSX pour ONTAP"^]
+
+
+
+--
+

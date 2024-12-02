@@ -1,0 +1,133 @@
+---
+sidebar: sidebar 
+permalink: manage-projects.html 
+keywords: Microsoft SQL Server instance, server instance, manage host, view host, database host, database instance, manage, unmanage 
+summary: Gérez les instances Microsoft SQL Server en usine de workloads pour les bases de données. 
+---
+= Gérer les projets de Builders
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez gérer des projets Builders pour contrôler la gestion de votre code et de vos artéfacts pour chaque projet dans l'usine de workloads BlueXP  pour les constructeurs.
+
+
+
+== Créer un projet
+
+Vous pouvez créer un nouveau projet Builders afin de tirer parti des fonctionnalités de protection des données de votre système de fichiers Amazon FSX pour NetApp ONTAP pour votre code et vos artéfacts.
+
+.Étapes
+. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans la mosaïque Builders, sélectionnez *Créer un projet*.
+. Sur la page Créer un projet, fournissez les informations suivantes :
++
+.. *Nom du projet* : saisissez un nom pour le projet.
+.. *Description* : saisissez une description pour le projet.
+.. *Système de fichiers* : fournissez les informations suivantes :
++
+... *Informations d'identification* : sélectionnez les informations d'identification Amazon AWS à utiliser. Les constructeurs utilisent ces informations d'identification pour découvrir les systèmes de fichiers FSX for ONTAP que vous pouvez utiliser avec ce projet et pour créer des clones et des instantanés de projets.
+... *Région* : sélectionnez la région dans laquelle réside ce système de fichiers FSX pour ONTAP.
+... *FSX pour système de fichiers ONTAP* : sélectionnez un système de fichiers FSX pour ONTAP à utiliser avec ce projet.
++
+Vous ne pouvez sélectionner que les systèmes de fichiers configurés avec un lien. https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["En savoir plus sur les liens"^].
+
+... *Choisir un volume*: Sélectionnez un volume sur lequel stocker le projet; Builders utilise ce volume comme référentiel logiciel.
++
+Vous pouvez uniquement sélectionner les volumes configurés en tant que partage NFS.
+
+
+
+.. *Politiques d'opération* : fournir des limites pour les clones de projet :
++
+... *Rétention maximale en jours* : saisissez le nombre maximal de jours pendant lesquels un clone doit être conservé. Au bout de ce nombre de jours, l'usine de workloads supprime le clone.
+... *Nombre maximal de clones par utilisateur ou groupe* : entrez le nombre maximal de clones pouvant être provisionnés pour un utilisateur ou un groupe.
+... *Taille maximale du clone en Gio* : entrez la taille maximale en Gio d'un clone de projet.
+
+
+.. *Stratégies d'accès* : accorder explicitement l'accès au projet à des utilisateurs ou groupes spécifiques :
++
+... *Étendue de l'application de la stratégie* : saisissez des adresses IP uniques ou des plages d'adresses IP pour limiter l'accès au projet à ces adresses ou plages IP uniquement.
++
+Par exemple : `172.16.0.0/24`
+
+... *Identificateurs d'utilisateur ou de groupe* : saisissez des identificateurs d'utilisateur ou de groupe pour limiter l'accès au projet à ces utilisateurs ou groupes uniquement.
++
+Par exemple : `User1234`
+
+
+
+
+
+. Sélectionnez *Créer*.
+
+
+.Résultat
+Le projet est créé et apparaît dans la liste des projets de la page projets.
+
+
+
+== Afficher les projets existants
+
+Vous pouvez afficher les projets existants créés dans l'usine de charges de travail BlueXP  pour les constructeurs en suivant ces étapes.
+
+.Étapes
+. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans la mosaïque Builders, sélectionnez *aller à la page projets*.
+. Afficher les projets existants répertoriés sur la page projets.
+
+
+
+
+== Modifier un projet
+
+Vous pouvez modifier les paramètres d'un projet à tout moment.
+
+.Étapes
+. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans la mosaïque Builders, sélectionnez *aller à la page projets*.
+. Sur la page projets, sélectionnez image:icon-action.png["le bouton d'option"] le projet à modifier.
+. Apportez les modifications nécessaires à la configuration du projet.
+. Sélectionnez *Enregistrer*.
+
+
+.Étapes
+. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans la mosaïque Builders, sélectionnez *aller à la page projets*.
+. Sur la page projets, sélectionnez image:icon-action.png["le bouton d'option"] le projet à capturer.
+. Dans le menu résultat, sélectionnez *Créer un instantané*.
+. Dans la boîte de dialogue *Créer un instantané*, choisissez un nom pour l'instantané et sélectionnez *Créer*.
+
+
+
+
+== Afficher les espaces de travail d'un projet
+
+Un clone ou instantané d'un projet est appelé espace de travail. Lorsque vous créez un espace de travail, il est conservé tant que la stratégie d'opération du projet le permet. Vous pouvez afficher les espaces de travail existants pour un projet en suivant ces étapes.
+
+.Étapes
+. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans la mosaïque Builders, sélectionnez *aller à la page projets*.
+. Sur la page projets, choisissez un projet et sélectionnez *Afficher*.
+. Afficher le statut et les détails de tous les espaces de travail pour ce projet.
+. Si vous voyez des alertes ou des avertissements pour un espace de travail, passez le curseur sur l'icône d'alerte ou d'avertissement pour voir la raison.
+
+
+
+
+== Supprimer un projet
+
+Vous pouvez supprimer un projet lorsqu'il n'est plus nécessaire en suivant ces étapes.
+
+.Étapes
+. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans la mosaïque Builders, sélectionnez *aller à la page projets*.
+. Sur la page projets, sélectionnez image:icon-action.png["le bouton d'option"] le projet à supprimer.
+. Sélectionnez *Supprimer*.
+. Dans la boîte de dialogue de confirmation, sélectionnez *Supprimer*.
+
+
+.Résultat
+Le projet est supprimé et tout code ou artefact associé au projet est supprimé du volume. Les snapshots et les clones du projet sont conservés.
