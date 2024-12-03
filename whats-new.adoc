@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, workload factory, builders, workload factory' 
 summary: 'Découvrez les nouveautés de l"usine de workloads pour les bases de données.' 
 ---
-= Quoi de neuf
+= Nouveautés de l'usine de workloads BlueXP  pour les constructeurs
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

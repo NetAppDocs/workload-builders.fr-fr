@@ -4,7 +4,7 @@ permalink: create-workspaces.html
 keywords: manage, workspace, snapshot, project 
 summary: 'Un espace de travail dans une usine de charges de travail BlueXP  pour les constructeurs est une représentation perforce d"un projet basée sur un instantané de projet. Vous pouvez créer des espaces de travail dans le cadre d"un projet Builders.' 
 ---
-= Créez un espace de travail
+= Créez un espace de travail Builders
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
