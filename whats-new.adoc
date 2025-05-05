@@ -15,6 +15,16 @@ Découvrez les nouveautés de la fonctionnalité Builders de l'usine de charge d
 
 
 
+== 4 mai 2025
+
+
+
+=== Mise à jour de la terminologie des autorisations
+
+L'interface utilisateur et la documentation de l'usine de la charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture-écriture » pour faire référence aux autorisations d'automatisation.
+
+
+
 == 1 décembre 2024
 
 
