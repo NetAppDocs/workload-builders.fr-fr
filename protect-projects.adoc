@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: protect-projects.html 
+keywords: snapshot, clone, project, protect 
+summary: Protégez vos projets Builders en créant des instantanés et des clones. 
+---
+= Protégez l'usine de charges de travail BlueXP  pour les projets de constructeur
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Protégez vos projets Builders en créant des snapshots à la demande directement à partir de l'usine de la charge de travail. Les instantanés d'un projet sont stockés dans le système de fichiers associé au projet lors de sa création.
+
+
+
+== Créer un instantané d'un projet
+
+Vous pouvez créer un instantané d'un projet en suivant ces étapes.
+
+.Étapes
+. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans la mosaïque Builders, sélectionnez *aller à la page projets*.
+. Sur la page projets, sélectionnez image:icon-action.png["le bouton d'option"] le projet à capturer.
+. Dans le menu résultat, sélectionnez *Créer un instantané*.
+. Dans la boîte de dialogue *Créer un instantané*, choisissez un nom pour l'instantané et sélectionnez *Créer*.
+

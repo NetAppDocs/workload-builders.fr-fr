@@ -353,4 +353,10 @@
   <block id="98c15024a0a6463353585181f922a6d8" category="list-text">Vous devez ajouter des informations d'identification AWS à l'usine de la charge de travail avec des autorisations en lecture/écriture, ce qui signifie que vous utiliserez l'usine de la charge de travail en mode _Read/Write_ pour Builders.</block>
   <block id="19e72e9857cc00ad57d29107d2e5f1fb" category="paragraph">Les autorisations _Basic_ mode et _Read-Only_ mode ne sont pas prises en charge pour le moment. <block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">4 mai 2025</block>
+  <block id="d585a12eb322284819964d656e33d798" category="summary">Protégez vos projets Builders en créant des instantanés et des clones.</block>
+  <block id="69b33a7dae155d4aeca7bb5e1abb1cce" category="doc">Protégez l'usine de charges de travail BlueXP  pour les projets de constructeur</block>
+  <block id="0deec7e6c3ce920634e346d6726ee3dc" category="paragraph">Protégez vos projets Builders en créant des snapshots à la demande directement à partir de l'usine de la charge de travail. Les instantanés d'un projet sont stockés dans le système de fichiers associé au projet lors de sa création.</block>
+  <block id="1c88041df602722b072eab90c31d79ca" category="section-title">Créer un instantané d'un projet</block>
+  <block id="1370537941b9a464462bf9a14972eee6" category="paragraph">Vous pouvez créer un instantané d'un projet en suivant ces étapes.</block>
+  <block id="a0f77c725888fef07f815b55549ad747" category="sidebar">Protéger les projets</block>
 </blocks>

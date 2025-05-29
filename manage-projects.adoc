@@ -93,14 +93,6 @@ Vous pouvez modifier les paramètres d'un projet à tout moment.
 . Sélectionnez *Enregistrer*.
 
 
-.Étapes
-. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
-. Dans la mosaïque Builders, sélectionnez *aller à la page projets*.
-. Sur la page projets, sélectionnez image:icon-action.png["le bouton d'option"] le projet à capturer.
-. Dans le menu résultat, sélectionnez *Créer un instantané*.
-. Dans la boîte de dialogue *Créer un instantané*, choisissez un nom pour l'instantané et sélectionnez *Créer*.
-
-
 
 
 == Afficher les espaces de travail d'un projet
