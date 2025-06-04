@@ -14,10 +14,10 @@ summary: 'Assurez-vous que l"usine de workloads et AWS sont correctement configu
 Assurez-vous que l'usine de workloads et AWS sont correctement configurées avant de commencer à utiliser l'usine de workloads BlueXP  pour les constructeurs. Vous devez notamment disposer de vos identifiants de connexion AWS, d'un système de fichiers FSX pour ONTAP déployé, et bien plus encore.
 
 Connexion et compte d'usine de la charge de travail:: Vous devez vous https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["configurez un compte avec une usine de charges de travail"^] connecter à l'aide de l'un des https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
-Identifiants et autorisations AWS:: Vous devez ajouter des informations d'identification AWS à l'usine de la charge de travail avec des autorisations en lecture/écriture, ce qui signifie que vous utiliserez l'usine de la charge de travail en mode _Read/Write_ pour Builders.
+Identifiants et autorisations AWS:: Vous devez ajouter les informations d'identification AWS à la fabrique de charges de travail avec des autorisations de lecture/écriture, ce qui signifie que vous utiliserez la fabrique de charges de travail en mode _lecture/écriture_ pour les générateurs.
 
 
-Les autorisations _Basic_ mode et _Read-Only_ mode ne sont pas prises en charge pour le moment. https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Découvrez comment ajouter des identifiants AWS à l'usine de workloads"^]
+Les autorisations en mode _de base_ et en mode _lecture seule_ ne sont pas prises en charge pour le moment. https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Découvrez comment ajouter des identifiants AWS à l'usine de workloads"^]
 
 FSX pour le système de fichiers ONTAP:: Vous avez besoin d'au moins un système de fichiers FSX pour ONTAP :
 +

@@ -50,7 +50,7 @@ Lorsque vous utilisez Builders, vous créez un projet et attribuez un volume qui
 
 == Modes de fonctionnement en usine de la charge de travail
 
-Trois modes opérationnels différents - _Basic_, _read_ et _automate_ - offrent des options flexibles pour le déploiement à l'intérieur et à l'extérieur de l'usine de charge de travail. Obtenez une valeur immédiate à zéro confiance en _Basic_ mode avec des extraits de code pour une utilisation en dehors de l'usine de la charge de travail. Bénéficiez d'une valeur incrémentielle avec une confiance incrémentale en modes _read_ et _automate_.
+Trois modes de fonctionnement différents (de base, en lecture seule et en lecture/écriture) offrent des options de déploiement flexibles à l'intérieur et à l'extérieur de Workload Factory. Obtenez une valeur immédiate à zéro confiance en _Basic_ mode avec des extraits de code pour une utilisation en dehors de l'usine de la charge de travail. Bénéficiez d'une valeur ajoutée grâce à une confiance accrue en modes lecture seule et lecture/écriture.
 
 En savoir plus sur link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modes de fonctionnement en usine de la charge de travail"^].
 
