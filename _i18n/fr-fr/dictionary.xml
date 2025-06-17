@@ -348,15 +348,29 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="doc">Mise à jour de la terminologie des autorisations</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">4 mai 2025</block>
-  <block id="d585a12eb322284819964d656e33d798" category="summary">Protégez vos projets Builders en créant des instantanés et des clones.</block>
-  <block id="69b33a7dae155d4aeca7bb5e1abb1cce" category="doc">Protégez l'usine de charges de travail BlueXP  pour les projets de constructeur</block>
-  <block id="0deec7e6c3ce920634e346d6726ee3dc" category="paragraph">Protégez vos projets Builders en créant des snapshots à la demande directement à partir de l'usine de la charge de travail. Les instantanés d'un projet sont stockés dans le système de fichiers associé au projet lors de sa création.</block>
   <block id="1c88041df602722b072eab90c31d79ca" category="section-title">Créer un instantané d'un projet</block>
   <block id="1370537941b9a464462bf9a14972eee6" category="paragraph">Vous pouvez créer un instantané d'un projet en suivant ces étapes.</block>
-  <block id="a0f77c725888fef07f815b55549ad747" category="sidebar">Protéger les projets</block>
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">L'interface utilisateur et la documentation de l'usine de charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.</block>
   <block id="9d31d07638cfa37e022a93f50a24a37a" category="paragraph">Trois modes de fonctionnement différents (de base, en lecture seule et en lecture/écriture) offrent des options de déploiement flexibles à l'intérieur et à l'extérieur de Workload Factory. Obtenez une valeur immédiate à zéro confiance en _Basic_ mode avec des extraits de code pour une utilisation en dehors de l'usine de la charge de travail. Bénéficiez d'une valeur ajoutée grâce à une confiance accrue en modes lecture seule et lecture/écriture.</block>
   <block id="52170312a0c40a6c39ee9dda5284b4f0" category="paragraph">Vous pouvez utiliser l'usine de workloads en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout d'informations d'identification AWS à la fabrique de charges de travail en mode _lecture seule_ ou _lecture/écriture_ donne à votre compte de fabrique de charges de travail les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSx pour ONTAP, ainsi que pour déployer et gérer les projets Builders.</block>
   <block id="07b92eb27d7b3c0fc0f57b352341acb5" category="list-text">Vous devez ajouter les informations d'identification AWS à la fabrique de charges de travail avec des autorisations de lecture/écriture, ce qui signifie que vous utiliserez la fabrique de charges de travail en mode _lecture/écriture_ pour les générateurs.</block>
   <block id="5e80379093f27293f5ebbde3a13ddc71" category="paragraph">Les autorisations en mode _de base_ et en mode _lecture seule_ ne sont pas prises en charge pour le moment. <block ref="ced1a4827b1ea3c1da0273c3d73fdd46" category="inline-link-rx"></block></block>
+  <block id="fc031ba945e09cb6053f39527ae4937f" category="doc">Prise en charge du clonage</block>
+  <block id="e0fa1f53117aa72ea1061c2daaead5bc" category="paragraph">Vous pouvez désormais cloner un projet dans la Workload Factory de BlueXP pour Builders. Lorsque vous clonez un projet, Builders crée un nouveau projet à partir d'un snapshot, avec la même configuration que l'original. Le clonage est utile pour créer rapidement des projets similaires ou à des fins de test. Vous pouvez monter le nouveau clone de projet en suivant les instructions de Builders.</block>
+  <block id="d88d0821a38808f607bab21c2cc4cf9e" category="inline-link">Gérer les versions de l'usine de charge de travail BlueXP pour les projets Builders</block>
+  <block id="bbdb933c88b694592079931541c31eb3" category="paragraph"><block ref="bbdb933c88b694592079931541c31eb3" category="inline-link-rx"></block></block>
+  <block id="f3dffc1ab287638d7073208a231fa289" category="summary">Gérez les versions de vos projets Builders à l'aide d'instantanés et de clones.</block>
+  <block id="b066fd241c4e6e66ece7c7a4527218cf" category="inline-link">API REST de l'usine de charge de travail</block>
+  <block id="00b8d5f676925ae3d9b3373616e27074" category="paragraph">Travaillez avec différentes versions de vos projets Builders en créant des instantanés et des clones à la demande directement depuis Workload Factory. Les instantanés et les clones d'un projet sont stockés dans le système de fichiers associé au projet lors de sa création. Vous pouvez également gérer les instantanés et les clones à l'aide de l'outil <block ref="5f3a8bb73f58d34352656d43a7f37086" category="inline-link-rx"></block> .</block>
+  <block id="527db32c9553673d65f35d38b044b7de" category="section-title">Créer un clone d'un projet</block>
+  <block id="9a9aa1b9cb93d04e42fe69259c5b4a7e" category="paragraph">Clonez un projet Builders à partir d'un snapshot en suivant ces étapes. Lors de la création d'un clone, un nouveau volume modifiable est créé pour le contenir.</block>
+  <block id="ffd0b63d4491cd8691ad26a9457b8f6a" category="list-text">Sur la page Projets, sélectionnez <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> pour le projet que vous souhaitez cloner.</block>
+  <block id="e289b398c25a5d7192096ffdb52be29f" category="list-text">Dans le menu qui s'affiche, sélectionnez *Créer un clone*.</block>
+  <block id="1baa1309157b6d07509f68ee5fbfebaa" category="list-text">Dans la boîte de dialogue *Créer un clone*, procédez comme suit :</block>
+  <block id="c9f8a1bc51e7ad4b5dbd3b4fd54d159e" category="list-text">Entrez un nom pour le clone.</block>
+  <block id="ef9eed0d84a82b3fb511fd837da2eef7" category="paragraph">Le nom par défaut du clone est le nom du projet avec un suffixe de la date et de l'heure actuelles.</block>
+  <block id="34ec6730fd54f4c463f31402d0ea9b83" category="list-text">Sélectionnez un instantané à utiliser comme base pour le clone.</block>
+  <block id="c53c752e3fb8fda71f585d5e8721e833" category="paragraph">Workload Factory crée un nouveau clone du projet, et le clone apparaît comme un nouveau projet sur la page Projets.</block>
+  <block id="f6db487abe903d447c5070f569416c3a" category="section-title">16 juin 2025</block>
+  <block id="adbb6bf856639e7a9dcf34b22158718f" category="sidebar">Gérer les versions du projet</block>
 </blocks>
