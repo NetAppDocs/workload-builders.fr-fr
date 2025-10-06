@@ -4,14 +4,14 @@ permalink: version-projects.html
 keywords: snapshot, clone, project, protect, API, version, versions, versioning 
 summary: 'Gérez les versions de vos projets Builders à l"aide d"instantanés et de clones.' 
 ---
-= Gérer les versions de l'usine de charge de travail BlueXP pour les projets Builders
+= Gérer les versions des projets NetApp Workload Factory for Builders
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Travaillez avec différentes versions de vos projets Builders en créant des instantanés et des clones à la demande directement depuis Workload Factory. Les instantanés et les clones d'un projet sont stockés dans le système de fichiers associé au projet lors de sa création. Vous pouvez également gérer les instantanés et les clones à l'aide de l'outil  https://console.workloads.netapp.com/api-doc["API REST de l'usine de charge de travail"^] .
+Travaillez avec différentes versions de vos projets Builders en créant des instantanés et des clones à la demande directement depuis Workload Factory.  Les instantanés et les clones d’un projet sont stockés dans le système de fichiers associé au projet lors de sa création.  Vous pouvez également gérer les instantanés et les clones à l’aide du https://console.workloads.netapp.com/api-doc["API REST de Workload Factory"^] .
 
 
 
@@ -20,7 +20,7 @@ Travaillez avec différentes versions de vos projets Builders en créant des ins
 Vous pouvez créer un instantané d'un projet en suivant ces étapes.
 
 .Étapes
-. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Connectez-vous à Workload Factory en utilisant l'un deslink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
 . Dans la mosaïque Builders, sélectionnez *aller à la page projets*.
 . Sur la page projets, sélectionnez image:icon-action.png["le bouton d'option"] le projet à capturer.
 . Dans le menu résultat, sélectionnez *Créer un instantané*.
@@ -34,7 +34,7 @@ Vous pouvez créer un instantané d'un projet en suivant ces étapes.
 Clonez un projet Builders à partir d'un snapshot en suivant ces étapes. Lors de la création d'un clone, un nouveau volume modifiable est créé pour le contenir.
 
 .Étapes
-. Connectez-vous à l'usine de la charge de travail à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Connectez-vous à Workload Factory en utilisant l'un deslink:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^] .
 . Dans la mosaïque Builders, sélectionnez *aller à la page projets*.
 . Sur la page Projets, sélectionnez image:icon-action.png["le bouton d'option"] pour le projet que vous souhaitez cloner.
 . Dans le menu qui s'affiche, sélectionnez *Créer un clone*.

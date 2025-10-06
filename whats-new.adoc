@@ -1,17 +1,27 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, workload factory, builders, workload factory' 
-summary: 'Découvrez les nouveautés de l"usine de workloads pour les bases de données.' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, Workload Factory, builders, Workload Factory' 
+summary: Découvrez les nouveautés de Workload Factory pour les bases de données. 
 ---
-= Nouveautés de l'usine de workloads BlueXP  pour les constructeurs
+= Nouveautés de NetApp Workload Factory pour les constructeurs
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Découvrez les nouveautés de la fonctionnalité Builders de l'usine de charge de travail.
+Découvrez les nouveautés de la fonctionnalité Builders de Workload Factory.
+
+
+
+== 5 octobre 2025
+
+
+
+=== BlueXP workload factory désormais NetApp Workload Factory
+
+BlueXP a été renommé et repensé pour mieux refléter le rôle qu'il joue dans la gestion de votre infrastructure de données.  Par conséquent, BlueXP workload factory a été renommée NetApp Workload Factory.
 
 
 
@@ -21,9 +31,9 @@ Découvrez les nouveautés de la fonctionnalité Builders de l'usine de charge d
 
 === Prise en charge du clonage
 
-Vous pouvez désormais cloner un projet dans la Workload Factory de BlueXP pour Builders. Lorsque vous clonez un projet, Builders crée un nouveau projet à partir d'un snapshot, avec la même configuration que l'original. Le clonage est utile pour créer rapidement des projets similaires ou à des fins de test. Vous pouvez monter le nouveau clone de projet en suivant les instructions de Builders.
+Vous pouvez désormais cloner un projet dans BlueXP Workload Factory for Builders.  Lorsque vous clonez un projet, Builders crée un nouveau projet à partir d'un instantané, avec la même configuration que l'original.  Le clonage est utile pour créer rapidement des projets similaires ou à des fins de test.  Vous pouvez monter le nouveau clone du projet en suivant les instructions dans Builders.
 
-https://docs.netapp.com/us-en/workload-builders/version-projects.html["Gérer les versions de l'usine de charge de travail BlueXP pour les projets Builders"]
+https://docs.netapp.com/us-en/workload-builders/version-projects.html["Gérer les versions des projets BlueXP Workload Factory for Builders"]
 
 
 
@@ -33,7 +43,7 @@ https://docs.netapp.com/us-en/workload-builders/version-projects.html["Gérer le
 
 === Mise à jour de la terminologie des autorisations
 
-L'interface utilisateur et la documentation de l'usine de charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
+L'interface utilisateur et la documentation de Workload Factory utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
 
 
 
@@ -43,6 +53,6 @@ L'interface utilisateur et la documentation de l'usine de charge de travail util
 
 === Création de la version initiale de la charge de travail
 
-L'usine de charges de travail BlueXP  pour Builders simplifie la consommation et l'accès aux versions logicielles, éliminant ainsi le besoin d'outils ou de scripts personnalisés. Il vous permet de consommer des versions logicielles sous forme de clones instantanés intégrés à Perforce Helix Core comme espace de travail pratique pour vos processus de développement, ce qui vous fait gagner du temps et des ressources.
+BlueXP Workload Factory for Builders simplifie la consommation et l'accès aux versions logicielles, éliminant ainsi le besoin d'outils ou de scripts personnalisés.  Il vous permet de consommer des versions logicielles sous forme de clones instantanés intégrés à Perforce Helix Core comme espace de travail pratique pour vos processus de développement, économisant ainsi du temps et des ressources.
 
 La version initiale permet de gérer des projets et des espaces de travail, et d'automatiser les actions avec Codebox. Vous pouvez également intégrer Builders à Perforce Helix Core, afin de gérer différentes versions de chaque projet et de passer rapidement de l'une à l'autre.

@@ -22,7 +22,7 @@ Intégrez Builders à Perforce Helix Visual client (P4V) pour que les développe
 
 
 .Résultat
-L'usine de la charge de travail BlueXP  pour l'interface utilisateur Web Builders apparaît sous la forme d'un onglet HTML dans le client P4V.
+L'interface utilisateur Web de NetApp Workload Factory for Builders apparaît sous la forme d'un onglet HTML dans le client P4V.
 
 .Et la suite ?
 link:manage-projects.html["Créez un plan de déploiement Amazon EC2 à l'aide de l'outil de conseil de migration"].
