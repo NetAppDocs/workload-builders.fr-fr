@@ -17,11 +17,11 @@ NetApp Workload Factory for Builders est un outil de création d'environnement d
 
 == Qu'est-ce que NetApp Workload Factory pour les constructeurs ?
 
-NetApp Workload Factory for Builders est conçu pour rationaliser la manière dont les développeurs gèrent et interagissent avec différentes versions de leurs logiciels.  Builders s'intègre parfaitement à Perforce Helix Core pour fournir des clones instantanés de versions logicielles, créant des espaces de travail prêts à l'emploi pour les processus de développement, d'assurance qualité et de CI/CD.
+NetApp Workload Factory for Builders est conçu pour simplifier la manière dont les développeurs gèrent et interagissent avec les différentes versions de leurs logiciels. Builders fonctionne avec Perforce Helix Core pour cloner instantanément les versions logicielles et créer des espaces de travail pour le développement, l'assurance qualité et l'intégration continue/la livraison continue.
 
-Avec Builders, vous pouvez facilement créer un projet et attribuer un volume qui représente votre environnement logiciel et ses artéfacts. Lorsque vous mettez à jour votre logiciel, vous pouvez prendre des instantanés du volume, en capturant l'état de votre logiciel à ce moment-là. Cela signifie que vous pouvez accéder instantanément à n'importe quelle version de votre logiciel sans avoir à resynchroniser avec le système de contrôle des versions, ce qui vous permet de gagner un temps précieux et d'économiser des ressources.
+Avec Builders, vous pouvez facilement créer un projet et lui attribuer un volume qui représente votre environnement logiciel et ses artefacts. Lors de la mise à jour de votre logiciel, vous pouvez prendre des instantanés du volume, capturant ainsi l'état de votre logiciel à ce moment précis. Vous pouvez accéder instantanément à n'importe quelle version du logiciel sans resynchronisation, ce qui vous permet de gagner du temps et des ressources.
 
-En exploitant les fonctionnalités de snapshot et de clonage de ONTAP, Builders améliore votre workflow de développement. Il permet d'accéder rapidement à plusieurs versions de vos logiciels, d'accélérer les cycles de développement et de réduire les délais de mise sur le marché.
+Grâce aux fonctionnalités de snapshot et de clonage de NetApp ONTAP, Builders permet d'accéder plus rapidement aux différentes versions de votre logiciel, ce qui vous permet de développer et de publier des mises à jour plus rapidement.
 
 Pour plus d'informations sur Workload Factory, reportez-vous aulink:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["Présentation de Workload Factory"^] .
 
@@ -45,14 +45,6 @@ NetApp Workload Factory for Builders offre les fonctionnalités suivantes :
 == Projets et espaces de travail dans Builders
 
 Lorsque vous utilisez Builders, vous créez un projet et attribuez un volume qui représente votre environnement logiciel et ses artefacts. Chaque fois que vous créez une nouvelle version du logiciel, vous devez resynchroniser les données de volume et créer un snapshot de projet pour marquer l'état du volume comme une version connue. Le volume source du projet peut recevoir des mises à jour en continu et avoir plusieurs snapshots pour marquer plusieurs versions. Vous pouvez utiliser chaque instantané immédiatement en tant que clone instantané, référentiel modifiable dédié ou partagé disponible pour les développeurs, les processus d'assurance qualité ou de création. Un clone dans le contexte d'une version logicielle spécifique est un espace de travail.
-
-
-
-== Modes de fonctionnement dans Workload Factory
-
-Trois modes de fonctionnement différents - _de base_, _lecture seule_ et _lecture/écriture_ - offrent des options flexibles pour le déploiement à l'intérieur et à l'extérieur de Workload Factory.  Bénéficiez d'une valeur immédiate en mode zéro confiance en mode _basic_ avec des extraits de code à utiliser en dehors de Workload Factory.  Obtenez une valeur incrémentielle avec une confiance incrémentielle dans les modes _lecture seule_ et _lecture/écriture_.
-
-En savoir plus sur link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["modes de fonctionnement dans Workload Factory"^] .
 
 
 
@@ -95,6 +87,6 @@ Les régions AWS suivantes ne sont pas prises en charge :
 
 == Obtenir de l'aide
 
-Amazon FSX pour NetApp ONTAP est une solution propriétaire AWS. Pour toute question ou tout problème de support technique associé à votre système de fichiers FSX for ONTAP, à votre infrastructure ou à toute solution utilisant ce service, utilisez le centre de support de votre console de gestion AWS pour ouvrir un dossier de support avec AWS. Sélectionnez le service “FSX pour ONTAP” et la catégorie appropriée. Fournissez les informations restantes nécessaires pour créer un dossier de demande de support AWS.
+Amazon FSx for NetApp ONTAP est une solution AWS propriétaire. Pour obtenir de l'aide, utilisez le Centre de support de votre console de gestion AWS pour ouvrir un ticket. Sélectionnez « FSx pour ONTAP» et la catégorie, puis fournissez les informations requises.
 
 Pour des questions générales sur Workload Factory ou les applications et services Workload Factory, reportez-vous àlink:get-help-builders.html["Obtenez de l'aide pour les constructeurs de Workload Factory"] .
